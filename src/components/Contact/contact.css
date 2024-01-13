@@ -101,6 +101,9 @@ input,textarea:focus{
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
+    .contactTitle {
+        font-size: 2rem;
+    }
     .contactDesc {
         font-size: 0.9rem;
     }
@@ -111,6 +114,9 @@ input,textarea:focus{
 }
 
 @media screen and (max-width: 480px) {
+    .contactTitle {
+        font-size: 2rem;
+    }
     .contactDesc {
         font-size: 0.8rem;
     }
