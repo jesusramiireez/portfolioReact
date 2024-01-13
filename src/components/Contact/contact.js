@@ -33,8 +33,8 @@ const Contact = () => {
                     <input type='email' className='email' placeholder='Email' name='from_email' />
                     <textarea name="message" className="message" rows="5" placeholder='Your message here'></textarea>
                     <button type="submit" value="Send" className='formBtn'>Send</button>
+                    <div className={`alert ${alertMessage.includes('successfully') ? 'success' : 'error'}`}>{alertMessage}</div>
                 </form>
-                <div className={`alert ${alertMessage.includes('successfully') ? 'success' : 'error'}`}>{alertMessage}</div>
                 <div className='socialMedia'>
                         <a href="https://twitter.com/jesusramiirez_" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faXTwitter}/></a>
                         <a href="https://www.instagram.com/jesusramiireez_/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram}/></a>
