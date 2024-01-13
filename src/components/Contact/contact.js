@@ -34,11 +34,11 @@ const Contact = () => {
                     <textarea name="message" className="message" rows="5" placeholder='Your message here'></textarea>
                     <button type="submit" value="Send" className='formBtn'>Send</button>
                 </form>
-                <div className='socialMedia'>
-                        <a href="https://twitter.com/jesusramiirez_" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faXTwitter} className='iconStyle' /> </a>
-                        <a href="https://www.instagram.com/jesusramiireez_/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} className='iconStyle' /> </a>
-                </div>
                 <div className={`alert ${alertMessage.includes('successfully') ? 'success' : 'error'}`}>{alertMessage}</div>
+                <div className='socialMedia'>
+                        <a href="https://twitter.com/jesusramiirez_" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faXTwitter} /></a>
+                        <a href="https://www.instagram.com/jesusramiireez_/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram}/></a>
+                </div>
             </div>
         </section>
     );
