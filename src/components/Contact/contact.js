@@ -16,7 +16,6 @@ const Contact = () => {
             .then((result) => {
                 console.log(result.text);
                 setAlertMessage('Message sent successfully!');
-                form.current.reset();
             })
             .catch((error) => {
                 console.error(error.text);
@@ -34,12 +33,12 @@ const Contact = () => {
                     <input type='email' className='email' placeholder='Email' name='from_email' />
                     <textarea name="message" className="message" rows="5" placeholder='Your message here'></textarea>
                     <button type="submit" value="Send" className='formBtn'>Send</button>
-                    <div className={`alert ${alertMessage.includes('successfully') ? 'success' : 'error'}`}>{alertMessage}</div>
-                    <div className='socialMedia'>
+                </form>
+                <div className='socialMedia'>
                         <FontAwesomeIcon icon={faXTwitter} className='iconStyle' />
                         <FontAwesomeIcon icon={faInstagram} className='iconStyle' />
-                    </div>
-                </form>
+                </div>
+                <div className={`alert ${alertMessage.includes('successfully') ? 'success' : 'error'}`}>{alertMessage}</div>
             </div>
         </section>
     );
