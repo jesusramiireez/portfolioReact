@@ -1,0 +1,28 @@
+.footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.fa-heart {
+    color: #e44d26;
+    margin-left: 5px;
+}
+
+.fa-copyright {
+    font-size: 12px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .fa-copyright {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fa-copyright {
+        font-size: 8px;
+    }
+}

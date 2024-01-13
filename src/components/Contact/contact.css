@@ -1,0 +1,112 @@
+#contactContainer {
+    background: rgb(30, 30, 30);
+    color: white;
+    padding: 60px 0;
+}
+
+.contact {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contactTitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contactDesc {
+    font-size: 1rem;
+    color: #ccc;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: white;
+    background: rgb(54, 54, 54);;
+    font-size: 20px;
+}
+
+input,textarea:focus{
+    outline: none;
+}
+
+.formBtn {
+    background-color: rgb(241, 64, 64);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.formBtn:hover {
+    background-color: rgb(247, 50, 50);
+    font-weight: bold;
+}
+
+.socialMedia {
+    margin-top: 20px;
+}
+
+.fa-x-twitter {
+    color: #1DA1F2; 
+    font-size: 28px;
+    margin: 0 10px;
+}
+
+.fa-instagram {
+    color: #E4405F;
+    font-size: 28px;
+    margin: 0 10px;
+}
+
+.iconStyle:hover {
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .contactTitle {
+        font-size: 1.5rem;
+    }
+
+    .contactDesc {
+        font-size: 0.9rem;
+    }
+
+    .formBtn {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contactTitle {
+        font-size: 1.2rem;
+    }
+
+    .contactDesc {
+        font-size: 0.8rem;
+    }
+
+    .formBtn {
+        font-size: 0.8rem;
+    }
+}

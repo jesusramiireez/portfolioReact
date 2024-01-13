@@ -1,0 +1,96 @@
+#skillsContainer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skillCard {
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+    width: 1000px; 
+    height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerTitle {
+    text-align: center;
+    font-size: 38px;
+}
+
+.skillCard:hover {
+    transform: scale(1.05);
+    background: rgb(54, 54, 54);
+}
+
+.skillTitle {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.imgPanel {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 38px;
+    gap: 1rem;
+}
+
+.iconStyle {
+    text-align: center;
+}
+.fa-html5{
+    color: #E44D26;
+}
+
+.fa-css3-alt{
+    color: #1572B6;
+}
+
+.fa-js{
+    color: #F7DF1E;
+}
+
+.fa-react{
+    color: #61DAFB;
+}
+.fa-bootstrap{
+    color: #7952B3;
+}
+.fa-php{
+    color: #8892BF;
+}
+.fa-node{
+    color: #68A063;
+}
+
+.fa-linux{
+    color: #FFFF00;
+}
+.fa-windows{
+    color:  #0078D4;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .skillCard {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skillCard {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skillCard {
+        width: 100%;
+    }
+}
