@@ -12,7 +12,7 @@
     z-index: 2;
     background: rgb(30, 30, 30);
 }
-  
+
 .navTitle {
     font-size: 30px;
     height: 3rem;
@@ -24,27 +24,44 @@
     align-items: center;
     transition: color 0.3s ease-in-out;
 }
-  
+
 .navTitle:hover {
     cursor: pointer;
     color: rgb(241, 64, 64);
 }
-  
+
 .menuItem {
     margin: 1rem;
     cursor: pointer;
     font-size: 20px;
+    position: relative;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, background 0.3s ease-in-out;
 }
-  
+
+.menuItem::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgb(241, 64, 64);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
 .menuItem:hover {
     color: rgb(241, 64, 64);
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid rgb(241, 64, 64);
     transform: scale(1.1);
     background: rgba(241, 64, 64, 0);
 }
-  
+
+.menuItem:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 .contactBtn {
     background: white;
     color: black;
@@ -56,46 +73,46 @@
     align-items: center;
     padding: 1rem 1rem;
 }
-  
+
 .contactBtn p {
     padding-left: 1rem;
 }
-  
+
 .menuToggle {
     display: none;
     cursor: pointer;
 }
-  
+
 .menu {
     display: none;
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
     top: 5rem;
-    right: 2rem; 
+    right: 2rem;
     background-color: rgb(30, 30, 30);
 }
-  
+
 .menu.show {
     display: flex;
 }
-  
+
 @media screen and (max-width: 840px) {
     .navbar {
         display: flex;
         justify-content: space-between;
     }
-  
+
     .menuToggle {
         display: block;
         align-items: center;
         margin-bottom: rem;
     }
-  
+
     .menu.show {
         display: flex;
     }
-  
+
     .menuItem {
         margin: 0.5rem;
     }
@@ -106,13 +123,13 @@
         flex-direction: row;
         justify-content: space-between;
     }
-  
+
     .menuToggle {
         display: none;
     }
-  
+
     .menu {
-        display: flex; 
+        display: flex;
         flex-direction: row;
         align-items: flex-start;
         background-color: transparent;

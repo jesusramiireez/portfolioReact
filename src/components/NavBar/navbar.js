@@ -25,9 +25,6 @@ const Navbar = () => {
         <Link to='skillsContainer' className='menuItem' smooth={true} duration={500} offset={-80} onClick={closeMenu}>
           Skills
         </Link>
-        <Link to='projects' className='menuItem' smooth={true} duration={500} offset={-80} onClick={closeMenu}>
-          Projects
-        </Link>
         <Link to='contactContainer' className='menuItem' smooth={true} duration={500} offset={-80} onClick={closeMenu}>
           Contact
         </Link>

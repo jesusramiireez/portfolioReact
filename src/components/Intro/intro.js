@@ -13,7 +13,7 @@ const Intro = () => {
                 <p className='aboutText'>IT Student | Trying to improve every day.</p>
                 <div className='iconPanel'>
                     <a href="https://github.com/jesusramiireez" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
-                    <a href="https://www.linkedin.com/in/jes%C3%BAs-ram%C3%ADrez-matas-bbbb7021a/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
+                    <a href="https://www.linkedin.com/in/jes%C3%BAs-ram%C3%ADrez-bbbb7021a/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
                 </div>
             </div>
             <div className='imageContainer'><img src={bg} alt='PixelArt' className='bg'/></div>
