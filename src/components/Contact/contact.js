@@ -1,8 +1,5 @@
 import React, { useRef, useState } from 'react';
 import './contact.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
